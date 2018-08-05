@@ -12,30 +12,6 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      boxShowCaseSliders: [
-        {
-          title1: "Get computer to become a",
-          title2: "Pro gamer",
-          caption: "Aliquam sed arcu a elit porttitor mattis eu id nibh. Vestibulum ultricies nulla sed dapibus vestibulum.",
-          flex_action: "Shop Now",
-          image: "assets/images/home1_slideshow_1.jpg"
-        },
-        {
-          title1: "Get machinery to become a",
-          title2: "Pro machinery",
-          caption: "Machinery sed arcu a elit porttitor mattis eu id nibh. Vestibulum ultricies nulla sed dapibus vestibulum.",
-          flex_action: "Explore",
-          image: "assets/images/home1_slideshow_1.jpg"
-        }
-      ],
-      boxShowCase: [
-        {
-          image: "assets/images/home1_slideshow_banner_1.jpg"
-        },
-        {
-          image: "assets/images/home1_slideshow_banner_2.jpg"
-        }
-      ],
       recommendations: [
         {
           image1: "assets/images/sport_04.jpg",
@@ -314,7 +290,21 @@ class App extends Component {
             ]
           }
         ]
-      }
+      },
+      banners: [
+        {
+          image: "assets/images/home1_bn1.png",
+          url: "../../collections/all.html"
+        },
+        {
+          image: "assets/images/home1_bn1.png",
+          url: "../../collections/all.html"
+        },
+        {
+          image: "assets/images/home1_bn1.png",
+          url: "../../collections/all.html"
+        }
+      ]
     };
   }
 
@@ -325,18 +315,24 @@ class App extends Component {
       let rightCategory = this.state.rightCategory;
       let leftCategory = this.state.leftCategory;
       let tabWithSlider = this.state.tabWithSlider;
+
+      let banner1 = this.state.banners[0];
+      let banner2 = this.state.banners[1];
+      let banner3 = this.state.banners[2];
+
+
       return (
         <div className="App">
           <Header/>
           <div class="page-container" id="PageContainer">
             <main class="main-content" id="MainContent" role="main">
-              <BoxShowcase boxShowCaseSliders= {boxShowCaseSliders} boxShowCase= {boxShowCase} />
-              <TwoColumnProduct leftCategory={leftCategory} rightCategory={rightCategory} />                       
-              <BannerRow />
-              <TabWithSlider tabWithSlider={tabWithSlider} /> 
-              <BannerRow />
+              <BoxShowcase />
+              <TwoColumnProduct />                     
+              <BannerRow banner={banner1} />
+              <TabWithSlider /> 
+              <BannerRow banner={banner2} />
               <ProductRow recommendations= {recommendations} />
-              <BannerRow />
+              <BannerRow banner={banner3} />
             </main>
           </div>
           <Footer/>

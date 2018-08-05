@@ -2,8 +2,37 @@ import React, {Component} from 'react';
 
 export default class BoxShowcase extends Component {
 
+    constructor(props){
+        super(props);
+        this.state = {
+          boxShowCaseSliders: [
+            {
+              title1: "Get computer to become a",
+              title2: "Pro gamer",
+              caption: "Aliquam sed arcu a elit porttitor mattis eu id nibh. Vestibulum ultricies nulla sed dapibus vestibulum.",
+              flex_action: "Shop Now",
+              image: "assets/images/home1_slideshow_1.jpg"
+            },
+            {
+              title1: "Get machinery to become a",
+              title2: "Pro machinery",
+              caption: "Machinery sed arcu a elit porttitor mattis eu id nibh. Vestibulum ultricies nulla sed dapibus vestibulum.",
+              flex_action: "Explore",
+              image: "assets/images/home1_slideshow_1.jpg"
+            }
+          ],
+          boxShowCase: [
+            {
+              image: "assets/images/home1_slideshow_banner_1.jpg"
+            },
+            {
+              image: "assets/images/home1_slideshow_banner_2.jpg"
+            }
+          ]
+        };
+    }
 
-    renderSlideshow = this.props.boxShowCaseSliders.map(function (now, index) {
+    renderSlideshow = (boxShowCaseSliders) => boxShowCaseSliders.map(function (now, index) {
         console.log(index);
         var status = "item image";
         if(index == 0){
@@ -35,21 +64,23 @@ export default class BoxShowcase extends Component {
         </div>
   
         );
-      }, this);
+    }, this);
 
-      renderBoxShowCase = this.props.boxShowCase.map(function(now){
-          return(
+    renderBoxShowCase = (boxShowCase) => boxShowCase.map(function(now){
+        return(
             <div className="banner-1">
                 <a href="collections-all.html">
                     <img src={now.image} alt="" />
                 </a>
             </div>  
-          );
+        );
 
-      }, this);
+    }, this);
 
     render(){
-        console.log('props',this.props.cases);
+        let boxShowCaseSliders = this.state.boxShowCaseSliders;
+        let boxShowCase = this.state.boxShowCase;
+
         return (
             <div id="shopify-section-1490952756465" className="shopify-section index-section index-section-slideshow">
                 <div data-section-id="1490952756465" data-section-type="slideshow-section">
@@ -67,7 +98,7 @@ export default class BoxShowcase extends Component {
                                                     </ol>
                                                     <div className="carousel-inner">
                                                         
-                                                        {this.renderSlideshow}
+                                                        {this.renderSlideshow(boxShowCaseSliders)}
                                                     </div>
                                                     <a className="left carousel-control" href="index.html#home_main-slider" data-slide="prev">
                                                         <span className="icon-prev"></span>
@@ -80,7 +111,7 @@ export default class BoxShowcase extends Component {
                                         </div>
                                         <div className="home-banner-inner col-sm-4">
                                             <div className="banner-content">
-                                                {this.renderBoxShowCase}
+                                                {this.renderBoxShowCase(boxShowCase)}
                                             </div>
                                         </div>
                                     </div>

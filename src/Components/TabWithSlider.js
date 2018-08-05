@@ -2,7 +2,182 @@ import React, {Component} from 'react';
 
 export default class TabWithSlider extends Component {
 
-    renderTabs = this.props.tabWithSlider.tabs.map(function(tab, index){
+    constructor(props){
+        super(props);
+        this.state = {
+          tabWithSlider:{
+            title: "Handpicked",
+            tabs: [
+              {
+                title: "Best Sellers",
+                products: [
+                  {
+                    image1: "assets/images/sport_04.jpg",
+                    image2: "assets/images/sport_05.jpg",
+                    title: "Sport machine",
+                    price: "$200.00"
+                  },
+                  {
+                    image1: "assets/images/fashions_01.jpg",
+                    image2: "assets/images/fashions_01.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  },
+                  {
+                    image1: "assets/images/sport_06.jpg",
+                    image2: "assets/images/sport_07.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  },
+                  {
+                    image1: "assets/images/furniture_01.jpg",
+                    image2: "assets/images/furniture_03.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  },
+                  {
+                    image1: "assets/images/furniture_04.jpg",
+                    image2: "assets/images/furniture_05.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  },
+                  {
+                    image1: "assets/images/electronic_05.jpg",
+                    image2: "assets/images/electronic_08.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  }
+                ]
+              },
+              {
+                title: "Specials",
+                products: [
+                  {
+                    image1: "assets/images/sport_04.jpg",
+                    image2: "assets/images/sport_05.jpg",
+                    title: "Sport machine",
+                    price: "$200.00"
+                  },
+                  {
+                    image1: "assets/images/fashions_01.jpg",
+                    image2: "assets/images/fashions_01.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  },
+                  {
+                    image1: "assets/images/sport_06.jpg",
+                    image2: "assets/images/sport_07.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  },
+                  {
+                    image1: "assets/images/furniture_01.jpg",
+                    image2: "assets/images/furniture_03.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  },
+                  {
+                    image1: "assets/images/furniture_04.jpg",
+                    image2: "assets/images/furniture_05.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  },
+                  {
+                    image1: "assets/images/electronic_05.jpg",
+                    image2: "assets/images/electronic_08.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  }
+                ]
+              },
+              {
+                title: "Our picks",
+                products: [
+                  {
+                    image1: "assets/images/sport_04.jpg",
+                    image2: "assets/images/sport_05.jpg",
+                    title: "Sport machine",
+                    price: "$200.00"
+                  },
+                  {
+                    image1: "assets/images/fashions_01.jpg",
+                    image2: "assets/images/fashions_01.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  },
+                  {
+                    image1: "assets/images/sport_06.jpg",
+                    image2: "assets/images/sport_07.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  },
+                  {
+                    image1: "assets/images/furniture_01.jpg",
+                    image2: "assets/images/furniture_03.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  },
+                  {
+                    image1: "assets/images/furniture_04.jpg",
+                    image2: "assets/images/furniture_05.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  },
+                  {
+                    image1: "assets/images/electronic_05.jpg",
+                    image2: "assets/images/electronic_08.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  }
+                ]
+              },
+              {
+                title: "New Arrivals",
+                products: [
+                  {
+                    image1: "assets/images/sport_04.jpg",
+                    image2: "assets/images/sport_05.jpg",
+                    title: "Sport machine",
+                    price: "$200.00"
+                  },
+                  {
+                    image1: "assets/images/fashions_01.jpg",
+                    image2: "assets/images/fashions_01.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  },
+                  {
+                    image1: "assets/images/sport_06.jpg",
+                    image2: "assets/images/sport_07.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  },
+                  {
+                    image1: "assets/images/furniture_01.jpg",
+                    image2: "assets/images/furniture_03.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  },
+                  {
+                    image1: "assets/images/furniture_04.jpg",
+                    image2: "assets/images/furniture_05.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  },
+                  {
+                    image1: "assets/images/electronic_05.jpg",
+                    image2: "assets/images/electronic_08.jpg",
+                    title: "Sport machine",
+                    price: "$300.00"
+                  }
+                ]
+              }
+            ]
+          }
+        };
+      }
+
+    renderTabs = (tabWithSlider) => tabWithSlider.tabs.map(function(tab, index){
         var tabClass = "";
         if(index === 0){
             var tabClass = "active";
@@ -14,7 +189,7 @@ export default class TabWithSlider extends Component {
         );
     });
 
-    renderTabsPaneInside = (tab) => tab.products.map(function(tabPane, index){
+    renderTabsPaneInside = (tab) => tab.products.map(function(tabPane){
         return(
                 <div className="content_product">
                     <div className="row-container product list-unstyled clearfix">
@@ -79,7 +254,7 @@ export default class TabWithSlider extends Component {
             );
     });
 
-    renderTabsPane = this.props.tabWithSlider.tabs.map(function(tab,index){
+    renderTabsPane = (tabWithSlider) => tabWithSlider.tabs.map(function(tab,index){
         var tabClass = "tab-pane";
         if(index === 0){
             var tabClass = "tab-pane active";
@@ -94,6 +269,8 @@ export default class TabWithSlider extends Component {
     }, this);
 
     render(){
+        let tabWithSlider = this.state.tabWithSlider;
+
         return (
             <div className="shopify-section index-section index-section-protab1">
                 <div data-section-id="1490953841934" data-section-type="protab1-section">
@@ -106,10 +283,10 @@ export default class TabWithSlider extends Component {
                                             <div className="protab1_top page-top">
                                                 <div className="page-title">
                                                     <img src="assets/images/home1_icon-fa.png" alt="" />
-                                                    <h2>{this.props.tabWithSlider.title}</h2>
+                                                    <h2>{tabWithSlider.title}</h2>
                                                 </div>
                                                 <ul className="nav nav-tabs">
-                                                    {this.renderTabs}
+                                                    {this.renderTabs(tabWithSlider)}
                                                 </ul>
                                             </div>
                                             <div className="protab1_bottom">
@@ -119,7 +296,7 @@ export default class TabWithSlider extends Component {
                                                     </a>
                                                 </div>
                                                 <div className="tab-content">
-                                                    {this.renderTabsPane}
+                                                    {this.renderTabsPane(tabWithSlider)}
                                                 </div>
                                             </div>
                                         </div>

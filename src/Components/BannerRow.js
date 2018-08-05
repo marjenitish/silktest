@@ -12,8 +12,8 @@ export default class BannerRow extends Component {
                                     <div className="home_banner_inner">
                                         <div className="home_banner_content">
                                             <div className="col-sm-12 banner_item">
-                                                <a href="../../collections/all.html">
-                                                    <img src="assets/images/home1_bn1.png" alt="" />
+                                                <a href={this.props.banner.url}>
+                                                    <img src={this.props.banner.image} alt="" />
                                                 </a>
                                             </div>
                                         </div>

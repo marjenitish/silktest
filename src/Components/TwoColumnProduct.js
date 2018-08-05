@@ -2,6 +2,85 @@ import React, {Component} from 'react';
 
 export default class TwoColumnProduct extends Component {
 
+    constructor(props){
+        super(props);
+        this.state = {
+          leftCategory: {
+            title: "Electronics",
+            icon: "assets/images/home1_icon-sale.png",
+            categories: [
+              {
+                image1: "assets/images/digital_10.jpg",
+                image2: "assets/images/digital_02.jpg",
+                title: "Sport machine",
+                price: "$200.00"
+              },
+              {
+                image1: "assets/images/digital_01.jpg",
+                image2: "assets/images/digital_05.jpg",
+                title: "Sport machine",
+                price: "$300.00"
+              },
+              {
+                image1: "assets/images/digital_02.jpg",
+                image2: "assets/images/digital_03.jpg",
+                title: "Sport machine",
+                price: "$300.00"
+              },
+              {
+                image1: "assets/images/digital_05.jpg",
+                image2: "assets/images/digital_07.jpg",
+                title: "Sport machine",
+                price: "$300.00"
+              },
+              {
+                image1: "assets/images/furniture_06.jpg",
+                image2: "assets/images/furniture_01.jpg",
+                title: "Sport machine",
+                price: "$300.00"
+              }
+            ]
+          },
+          rightCategory: {
+            title: "Machinery",
+            icon: "assets/images/home1_icon-new.png",
+            categories: [
+              {
+                image1: "assets/images/digital_10.jpg",
+                image2: "assets/images/digital_02.jpg",
+                title: "Sport machine",
+                price: "$200.00"
+              },
+              {
+                image1: "assets/images/digital_01.jpg",
+                image2: "assets/images/digital_05.jpg",
+                title: "Sport machine",
+                price: "$300.00"
+              },
+              {
+                image1: "assets/images/digital_02.jpg",
+                image2: "assets/images/digital_03.jpg",
+                title: "Sport machine",
+                price: "$300.00"
+              },
+              {
+                image1: "assets/images/digital_05.jpg",
+                image2: "assets/images/digital_07.jpg",
+                title: "Sport machine",
+                price: "$300.00"
+              },
+              {
+                image1: "assets/images/furniture_06.jpg",
+                image2: "assets/images/furniture_01.jpg",
+                title: "Sport machine",
+                price: "$300.00"
+              }
+            ]
+          }
+        };
+      }
+    
+
     twoRow = (category) => {
         return (
             <div className="column_item">
@@ -76,7 +155,8 @@ export default class TwoColumnProduct extends Component {
         ); 
     }
     render(){
-        let leftcategories = this.props.leftCategory.categories;
+        let leftcategory = this.state.leftCategory;
+        let rightcategory = this.state.rightCategory;
         return (
             <div id="shopify-section-1490953257213" className="shopify-section index-section index-section-procol">
                 <div data-section-id="1490953257213" data-section-type="procol-section">
@@ -90,14 +170,14 @@ export default class TwoColumnProduct extends Component {
                                                 <div className="group-procol">
                                                     <div className="group-inner">
                                                         <div className="page-title">
-                                                            <img src={this.props.leftCategory.icon} alt="" />
-                                                            <h2>{this.props.leftCategory.title}</h2>
+                                                            <img src={leftcategory.icon} alt="" />
+                                                            <h2>{leftcategory.title}</h2>
                                                         </div>
                                                         <div className="column_content style_1">
-                                                            {this.twoRow(leftcategories)}
+                                                            {this.twoRow(leftcategory.categories)}
                                                             <div className="column_item">
                                                                 <div className="row-container ">
-                                                                    {this.threeRow(this.props.leftCategory.categories)}                                                            
+                                                                    {this.threeRow(leftcategory.categories)}                                                            
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -108,16 +188,16 @@ export default class TwoColumnProduct extends Component {
                                                 <div className="group-procol">
                                                     <div className="group-inner">
                                                         <div className="page-title">
-                                                            <img src={this.props.rightCategory.icon} alt="" />
-                                                            <h2>{this.props.rightCategory.title}</h2>
+                                                            <img src={rightcategory.icon} alt="" />
+                                                            <h2>{rightcategory.title}</h2>
                                                         </div>
                                                         <div className="column_content style_2">
                                                             <div className="column_item">
                                                                 <div className="row-container ">
-                                                                    {this.threeRow(this.props.rightCategory.categories)}
+                                                                    {this.threeRow(rightcategory.categories)}
                                                                 </div>
                                                             </div>
-                                                            {this.twoRow(this.props.rightCategory.categories)}
+                                                            {this.twoRow(rightcategory.categories)}
                                                         </div>
                                                     </div>
                                                 </div>

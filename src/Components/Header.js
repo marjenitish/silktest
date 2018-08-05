@@ -14,12 +14,12 @@ export default class Header extends Component {
                                             <ul className="unstyled top-menu">
                                                 <li className="nav-item active">
                                                     <a href="index.html">
-                                                        <span>Sourcing Solutions</span>
+                                                        <span>Request for Quotations</span>
                                                     </a>
                                                 </li>
                                                 <li className="nav-item active">
                                                     <a href="index.html">
-                                                        <span>Services &amp; Membership</span>
+                                                        <span>Become a Agent</span>
                                                     </a>
                                                 </li>
                                                 <li className="nav-item active">
@@ -81,26 +81,18 @@ export default class Header extends Component {
                                                             <a className="currency_wrapper dropdown-toggle" data-toggle="dropdown">
                                                                 <i className="sub-dropdown1 visible-sm visible-md visible-lg"></i>
                                                                 <i className="sub-dropdown visible-sm visible-md visible-lg"></i>
-                                                                <span className="currency_code heading hidden-xs">USD</span>
-                                                                <span className="currency_code visible-xs">USD</span>
+                                                                <span className="currency_code heading hidden-xs">NRS</span>
+                                                                <span className="currency_code visible-xs">NRS</span>
                                                                 <i className="fa fa-angle-down"></i>
                                                             </a>
                                                             <ul className="currencies dropdown-menu text-left">
                                                                 <li className="currency-USD active">
-                                                                    <a href="">USD</a>
-                                                                    <input type="hidden" value="USD" />
+                                                                    <a href="">NRS</a>
+                                                                    <input type="hidden" value="NRS" />
                                                                 </li>
-                                                                <li className="currency-GBP">
-                                                                    <a href="">GBP</a>
-                                                                    <input type="hidden" value="GBP" />
-                                                                </li>
-                                                                <li className="currency-AUD">
-                                                                    <a href="">AUD</a>
-                                                                    <input type="hidden" value="AUD" />
-                                                                </li>
-                                                                <li className="currency-EUR">
-                                                                    <a href="">EUR</a>
-                                                                    <input type="hidden" value="EUR" />
+                                                                <li className="currency-RNB">
+                                                                    <a href="">RNB</a>
+                                                                    <input type="hidden" value="RNB" />
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -121,11 +113,8 @@ export default class Header extends Component {
                                             <div className="nav-top">
                                                 <div className="nav-logo">
                                                     <a href="index.html">
-                                                        <img src="assets/images/logo.png" alt="" title="Sarahmarket 1" />
+                                                        <img src="assets/images/logo11.png" style={{width: "150px"}} alt="" title="Sarahmarket 1" />
                                                     </a>
-                                                    <h1 styles={{display: 'none'}}>
-                                                        <a href="index.html">Sarahmarket 1</a>
-                                                    </h1>
                                                 </div>
 
                                                 <div class="group-search-cart">
@@ -135,16 +124,8 @@ export default class Header extends Component {
                                                             <input type="text" name="q" class="search_box" placeholder="Enter your keyword ..." value="" />
                                                             <div class="collections-selector">
                                                                 <select class="single-option-selector" data-option="collection-option" id="collection-option" name="collection">
-                                                                    <option value="all">All Categories</option>
-                                                                    <option value="best-sellers">Best Sellers</option>
-                                                                    <option value="digital">Digital</option>
-                                                                    <option value="electronic">Electronic</option>
-                                                                    <option value="fashions">Fashions</option>
-                                                                    <option value="furniture">Furniture</option>
-                                                                    <option value="maybe-you-prefer">Maybe You Prefer</option>
-                                                                    <option value="new-products">New Products</option>
-                                                                    <option value="sport">Sport</option>
-                                                                    <option value="todays-trending">Today's Trending</option>
+                                                                    <option value="all">Products</option>
+                                                                    <option value="best-sellers">Suppliers</option>
                                                                 </select>
                                                             </div>
                                                             <button class="search_submit" type="submit">
@@ -252,96 +233,11 @@ export default class Header extends Component {
                                                     <div class="group_navbtn">
                                                         <a href="collections.html" class="dropdown-toggle" data-toggle="dropdown">
                                                             <span class="dropdown-toggle">
-                                                                Shop By Category
+                                                                My Market
                                                             </span>
                                                             <i class="fa fa-bars" aria-hidden="true"></i>
                                                         </a>
-                                                        <ul class="navigation_links_left dropdown-menu" styles={{display: 'none'}}>
-                                                            <li class="nav-item dropdown navigation _icon">
-                                                                <a href="collections-all.html" class="dropdown-toggle dropdown-link" data-toggle="dropdown">
-                                                                    <span>Hot Deals</span>
-                                                                    <i class="fa fa-angle-down"></i>
-                                                                    <i class="sub-dropdown1  visible-sm visible-md visible-lg"></i>
-                                                                    <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
-                                                                </a>
-                                                                <ul class="dropdown-menu" styles={{display: 'none'}}>
-                                                                    <li class="li-sub-mega">
-                                                                        <a tabindex="-1" href="collections.html">Health &amp; Beauty</a>
-                                                                    </li>
-                                                                    <li class="li-sub-mega">
-                                                                        <a tabindex="-1" href="collections.html">Family Food</a>
-                                                                    </li>
-                                                                    <li class="li-sub-mega">
-                                                                        <a tabindex="-1" href="collections.html">Baby Care &amp; Mon</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li class="nav-item dropdown navigation _icon">
-                                                                <a href="collections.html" class="dropdown-toggle dropdown-link" data-toggle="dropdown">
-                                                                    <span>Fashions</span>
-                                                                    <i class="fa fa-angle-down"></i>
-                                                                    <i class="sub-dropdown1  visible-sm visible-md visible-lg"></i>
-                                                                    <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
-                                                                </a>
-                                                                <ul class="dropdown-menu" styles={{display: 'none'}}>
-                                                                    <li class="li-sub-mega">
-                                                                        <a tabindex="-1" href="collections.html">Men's jackets</a>
-                                                                    </li>
-                                                                    <li class="li-sub-mega">
-                                                                        <a tabindex="-1" href="collections.html">Jewelry</a>
-                                                                    </li>
-                                                                    <li class="li-sub-mega">
-                                                                        <a tabindex="-1" href="collections.html">Men's Clothing</a>
-                                                                    </li>
-                                                                    <li class="li-sub-mega">
-                                                                        <a tabindex="-1" href="collections.html">Women's Accessories</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li class="nav-item dropdown navigation _icon">
-                                                                <a href="collections.html" class="dropdown-toggle dropdown-link" data-toggle="dropdown">
-                                                                    <span>Sport</span>
-                                                                    <i class="fa fa-angle-down"></i>
-                                                                    <i class="sub-dropdown1  visible-sm visible-md visible-lg"></i>
-                                                                    <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
-                                                                </a>
-                                                                <ul class="dropdown-menu" styles={{display: 'none'}}>
-                                                                    <li class="li-sub-mega">
-                                                                        <a tabindex="-1" href="collections.html">Sports machine</a>
-                                                                    </li>
-                                                                    <li class="li-sub-mega">
-                                                                        <a tabindex="-1" href="collections.html">Sport shoes 2017</a>
-                                                                    </li>
-                                                                    <li class="li-sub-mega">
-                                                                        <a tabindex="-1" href="collections.html">Sports bra </a>
-                                                                    </li>
-                                                                    <li class="li-sub-mega">
-                                                                        <a tabindex="-1" href="collections.html">Water sports</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li class="nav-item dropdown navigation _icon">
-                                                                <a href="collections.html" class="dropdown-toggle dropdown-link" data-toggle="dropdown">
-                                                                    <span>Electronic</span>
-                                                                    <i class="fa fa-angle-down"></i>
-                                                                    <i class="sub-dropdown1  visible-sm visible-md visible-lg"></i>
-                                                                    <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
-                                                                </a>
-                                                                <ul class="dropdown-menu" styles={{display: 'none'}}>
-                                                                    <li class="li-sub-mega">
-                                                                        <a tabindex="-1" href="collections.html">Electronic equipment</a>
-                                                                    </li>
-                                                                    <li class="li-sub-mega">
-                                                                        <a tabindex="-1" href="collections.html">Electronic cigarette</a>
-                                                                    </li>
-                                                                    <li class="li-sub-mega">
-                                                                        <a tabindex="-1" href="collections.html">Electronics tv</a>
-                                                                    </li>
-                                                                    <li class="li-sub-mega">
-                                                                        <a tabindex="-1" href="collections.html">Electronics utilities</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
+                                                        <ul class="navigation_links_left dropdown-menu" styles={{display: 'none'}}>                                                            
                                                             <li class="nav-item _icon">
                                                                 <a href="collections.html">
                                                                     <span>Digital</span>
@@ -367,128 +263,19 @@ export default class Header extends Component {
                                                 </div>
                                                 <div class="navigation_right">
                                                     <ul class="navigation_links">
-                                                        <li class="nav-item active">
-                                                            <a href="index.html">
-                                                                <span>Home</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item dropdown navigation">
-                                                            <a href="blog.html" class="dropdown-toggle dropdown-link" data-toggle="dropdown">
-                                                                <span>Blogs</span>
-                                                                <i class="fa fa-angle-down"></i>
-                                                                <i class="sub-dropdown1  visible-sm visible-md visible-lg"></i>
-                                                                <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
-                                                            </a>
-                                                            <ul class="dropdown-menu">
-                                                                <li class=" dropdown li-sub-mega">
-                                                                    <a href="blog.html">
-                                                                        <span>Home &amp; Garden</span>
-                                                                        <i class="fa fa-caret-right" aria-hidden="true"></i>
-                                                                        <i class="sub-dropdown1  visible-sm visible-md visible-lg"></i>
-                                                                        <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
-                                                                    </a>
-                                                                    <ul class="dropdown-menu">
-                                                                        <li class="li-sub-mega">
-                                                                            <a tabindex="-1" href="collections.html">Kitchen</a>
-                                                                        </li>
-                                                                        <li class="li-sub-mega">
-                                                                            <a tabindex="-1" href="collections.html">Bed Room</a>
-                                                                        </li>
-                                                                        <li class="li-sub-mega">
-                                                                            <a tabindex="-1" href="collections.html">Garden</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </li>
-                                                                <li class="li-sub-mega">
-                                                                    <a tabindex="-1" href="blog.html">Baby &amp; Mom</a>
-                                                                </li>
-                                                                <li class="li-sub-mega">
-                                                                    <a tabindex="-1" href="blog.html">Beauty &amp; Skin Care</a>
-                                                                </li>
-                                                                <li class="li-sub-mega">
-                                                                    <a tabindex="-1" href="blog.html">Food</a>
-                                                                </li>
-                                                                <li class="li-sub-mega">
-                                                                    <a tabindex="-1" href="blog.html">News</a>
-                                                                </li>
-                                                                <li class="li-sub-mega">
-                                                                    <a tabindex="-1" href="blog.html">Smartphone &amp; Tablet</a>
-                                                                </li>
-                                                                <li class="li-sub-mega">
-                                                                    <a tabindex="-1" href="blog.html">Furniture</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="dropdown mega-menu">
-                                                            <a href="about-us.html" class="dropdown-toggle dropdown-link" data-toggle="dropdown">
-                                                                <span>Pages</span>
-                                                                <i class="fa fa-angle-down"></i>
-                                                                <i class="sub-dropdown1 visible-sm visible-md visible-lg"></i>
-                                                                <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
-                                                            </a>
-                                                            <div class="megamenu-container megamenu-container-1 dropdown-menu" styles={{ width: "1170px", display: "none", backgroundImage:
-                                                                "assets/images/mega3_bg.png" }}>
-                                                                <ul class="sub-mega-menu">
-                                                                    <li class="mega-links mega1-collumn1 col-sm-3">
-                                                                        <ul>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="about-us.html">About Us</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="faqs.html">Shopping Guide</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="lookbook.html">Delivery Information</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="services.html">Privacy Policy</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="contact.html">Sitemap</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li class="mega-links mega1-collumn2 col-sm-3">
-                                                                        <ul>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="account.html">My account</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="login.html">Login</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="cart.html">My cart</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="wish-list.html">Wishlist</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="cart.html">Checkout</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li class="mega1-collumn3 col-sm-6">
-                                                                        <div class="col-image">
-                                                                            <img src="assets/images/logo.png" alt="" />
-                                                                        </div>
-                                                                        <div class="col-caption">Vivamus nec libero gravida, semper est sed, mollis magna. Integer
-                                                                            et iaculis eros.
-                                                                            <br/> Vivamus sodales nunc mi, a congue velit velit sem, vestibulum
-                                                                            tristique</div>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </li>
+
+
+
                                                         <li class="dropdown mega-menu">
                                                             <a href="collections.html" class="dropdown-toggle dropdown-link" data-toggle="dropdown">
-                                                                <span>Category</span>
+                                                                <span>Machinery</span>
                                                                 <i class="fa fa-angle-down"></i>
                                                                 <i class="sub-dropdown1 visible-sm visible-md visible-lg"></i>
                                                                 <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
                                                             </a>
-                                                            <div class="megamenu-container megamenu-container-2 dropdown-menu" styles={{width: '1170px'}}>
+                                                            <div class="megamenu-container megamenu-container-2 dropdown-menu" style={{width: '1170px'}}>
                                                                 <ul class="sub-mega-menu">
-                                                                    <li class="mega-links mega2-collumn1 col-sm-3">
+                                                                    <li class="mega-links mega2-collumn1 col-sm-2">
                                                                         <ul>
                                                                             <li class="list-title">Book &amp; office supply</li>
                                                                             <li class="list-unstyled li-sub-mega">
@@ -502,7 +289,7 @@ export default class Header extends Component {
                                                                             </li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li class="mega-links mega2-collumn2 col-sm-3">
+                                                                    <li class="mega-links mega2-collumn2 col-sm-2">
                                                                         <ul>
                                                                             <li class="list-title">Food Cupboard</li>
                                                                             <li class="list-unstyled li-sub-mega">
@@ -516,7 +303,7 @@ export default class Header extends Component {
                                                                             </li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li class="mega-links mega2-collumn3 col-sm-3">
+                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
                                                                         <ul>
                                                                             <li class="list-title">Home &amp; garden</li>
                                                                             <li class="list-unstyled li-sub-mega">
@@ -530,227 +317,306 @@ export default class Header extends Component {
                                                                             </li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li class="mega2-collumn4 col-sm-3">
-                                                                        <div class="products_right_item">
-                                                                            <div class="row-container ">
-                                                                                <div class="product home_product">
-                                                                                    <div class="row-left">
-                                                                                        <a href="products.html" class="container_item">
-                                                                                            <div class="hoverBorderWrapper">
-                                                                                                <img src="assets/images/digital_01_compact.jpg" class="not-rotation img-responsive front" alt="Digital equipment" />
-                                                                                                <div class="mask"></div>
-                                                                                                <img src="assets/images/digital_02_compact.jpg" class="rotation img-responsive" alt="Digital equipment" />
-                                                                                            </div>
-                                                                                        </a>
-                                                                                    </div>
-                                                                                    <div class="row-right">
-                                                                                        <div class="product-title">
-                                                                                            <a class="title-5" href="products.html">Digital equipment</a>
-                                                                                        </div>
-                                                                                        <div class="rating-star">
-                                                                                            <span class="spr-badge" id="spr_badge_9807768067" data-rating="0.0">
-                                                                                                <span class="spr-starrating spr-badge-starrating">
-                                                                                                    <i class="spr-icon spr-icon-star-empty"></i>
-                                                                                                    <i class="spr-icon spr-icon-star-empty"></i>
-                                                                                                    <i class="spr-icon spr-icon-star-empty"></i>
-                                                                                                    <i class="spr-icon spr-icon-star-empty"></i>
-                                                                                                    <i class="spr-icon spr-icon-star-empty"></i>
-                                                                                                </span>
-                                                                                                <span class="spr-badge-caption">No reviews</span>
-                                                                                            </span>
-                                                                                        </div>
-                                                                                        <div class="product-price">
-                                                                                            <span class="price">
-                                                                                                <span class="money" data-currency-usd="$200.00">$200.00</span>
-                                                                                            </span>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
+                                                                    
+                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                        <ul>
+                                                                            <li class="list-title">Home &amp; garden</li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Kitchen</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Bed Room</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Garden</a>
+                                                                            </li>
+                                                                        </ul>
                                                                     </li>
                                                                 </ul>
                                                             </div>
                                                         </li>
-                                                        <li class="dropdown mega-menu">
-                                                            <a href="collections-all.html" class="dropdown-toggle dropdown-link" data-toggle="dropdown">
-                                                                <span>Products</span>
-                                                                <i class="fa fa-angle-down"></i>
-                                                                <i class="sub-dropdown1 visible-sm visible-md visible-lg"></i>
-                                                                <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
-                                                            </a>
-                                                            <div class="megamenu-container megamenu-container-3 dropdown-menu" styles={{ width: "1170px", display: "none", backgroundImage:
-                                                                "assets/images/mega3_bg.png" }}>
 
-                                                                <ul class="sub-mega-menu">
-                                                                    <li class="mega-links mega3-collumn1 col-sm-3">
-                                                                        <ul>
-                                                                            <li class="list-title">Category</li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="collections.html">Foods</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="collections.html">Hot Deal</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="collections.html">Fashion</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="collections.html">Travel</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="collections.html">Other Services</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="collections.html">Healthy &amp; Beauty</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li class="mega-links mega3-collumn2 col-sm-3">
-                                                                        <ul>
-                                                                            <li class="list-title">Pages</li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="collections.html">Shopping cart</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="cart.html">Checkout</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="cart.html">Track order</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="account.html">My account</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="login.html">Login</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="register.html">Register</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li class="mega3-collumn3 col-sm-6">
-                                                                        <div class="dis_table">
-                                                                            <div class="dis_tablecell">
-                                                                                <div class="col-caption">
-                                                                                    <span class="title">
-                                                                                        Come &amp; Discover
-                                                                                    </span>
-                                                                                    <span class="content">
-                                                                                        The new style
-                                                                                    </span>
-                                                                                </div>
-                                                                                <a class="btn btn1" href="">Shop now</a>
-                                                                            </div>
-                                                                        </div>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </li>
                                                         <li class="dropdown mega-menu">
-                                                            <a href="super-deal.html" class="dropdown-toggle dropdown-link" data-toggle="dropdown">
-                                                                <span>Top Brands</span>
+                                                            <a href="collections.html" class="dropdown-toggle dropdown-link" data-toggle="dropdown">
+                                                                <span>Electronics</span>
                                                                 <i class="fa fa-angle-down"></i>
                                                                 <i class="sub-dropdown1 visible-sm visible-md visible-lg"></i>
                                                                 <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
                                                             </a>
-                                                            <div class="megamenu-container megamenu-container-4 dropdown-menu" styles={{display: 'none', width: '1170px'}}>
+                                                            <div class="megamenu-container megamenu-container-2 dropdown-menu" style={{width: '1170px'}}>
                                                                 <ul class="sub-mega-menu">
-                                                                    <li class="mega-links mega4-collumn1 col-sm-3">
+                                                                    <li class="mega-links mega2-collumn1 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Blogs</li>
+                                                                            <li class="list-title">Book &amp; office supply</li>
                                                                             <li class="list-unstyled li-sub-mega">
-                                                                                <a href="blog.html">Home &amp; Garden</a>
+                                                                                <a href="collections.html">Science</a>
                                                                             </li>
                                                                             <li class="list-unstyled li-sub-mega">
-                                                                                <a href="blog.html">Baby &amp; Mom</a>
+                                                                                <a href="collections.html">Economic</a>
                                                                             </li>
                                                                             <li class="list-unstyled li-sub-mega">
-                                                                                <a href="blog.html">Beauty &amp; Skin Care</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="blog.html">Food</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="blog.html">News</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="blog.html">Smartphone &amp; Tablet</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="blog.html">Furniture</a>
+                                                                                <a href="collections.html">Office Supply</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li class="mega-links mega4-collumn2 col-sm-3">
+                                                                    <li class="mega-links mega2-collumn2 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">List Pages</li>
+                                                                            <li class="list-title">Food Cupboard</li>
                                                                             <li class="list-unstyled li-sub-mega">
-                                                                                <a href="about-us.html">About us</a>
+                                                                                <a href="collections.html">Breakfast Cereals</a>
                                                                             </li>
                                                                             <li class="list-unstyled li-sub-mega">
-                                                                                <a href="contact.html">Contact</a>
+                                                                                <a href="collections.html">Jam, Honey &amp; Spreads</a>
                                                                             </li>
                                                                             <li class="list-unstyled li-sub-mega">
-                                                                                <a href="faqs.html">FAQs</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="lookbook.html">Lookbook</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="price-table.html">Price Table</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="services.html">Services</a>
-                                                                            </li>
-                                                                            <li class="list-unstyled li-sub-mega">
-                                                                                <a href="super-deal.html">Super Deal</a>
+                                                                                <a href="collections.html">Crisps, Snacks &amp; Nuts</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li class="mega4-collumn3 col-sm-6">
-                                                                        <div class="blog-item-inner">
-                                                                            <div class="blog-top">
-                                                                                <a class="blog-img" href="article.html">
-                                                                                    <img src="assets/images/blog_01.jpg" alt="Pellentesque vitae enim quis risus" />
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="blog-content">
-                                                                                <a href="article.html" class="blog-title clearfix">Pellentesque vitae enim quis risus</a>
-                                                                                <div class="blog_group">
-                                                                                    <span class="blog-date">
-                                                                                        Apr 02, 2017
-                                                                                    </span>
-                                                                                    <span class="blog-comment">
-                                                                                        <i class="fa fa-comments-o"></i>
-                                                                                        <span>1</span>
-                                                                                    </span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="blog-item-inner">
-                                                                            <div class="blog-top">
-                                                                                <a class="blog-img" href="article.html">
-                                                                                    <img src="assets/images/blog_02.jpg" alt="Pellentesque vitae enim quis risus" />
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="blog-content">
-                                                                                <a href="article.html" class="blog-title clearfix">Pellentesque vitae enim quis risus</a>
-                                                                                <div class="blog_group">
-                                                                                    <span class="blog-date">
-                                                                                        Apr 02, 2017
-                                                                                    </span>
-                                                                                    <span class="blog-comment">
-                                                                                        <i class="fa fa-comments-o"></i>
-                                                                                        <span>0</span>
-                                                                                    </span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
+                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                        <ul>
+                                                                            <li class="list-title">Home &amp; garden</li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Kitchen</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Bed Room</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Garden</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    
+                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                        <ul>
+                                                                            <li class="list-title">Home &amp; garden</li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Kitchen</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Bed Room</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Garden</a>
+                                                                            </li>
+                                                                        </ul>
                                                                     </li>
                                                                 </ul>
                                                             </div>
                                                         </li>
+
+
+                                                        <li class="dropdown mega-menu">
+                                                            <a href="collections.html" class="dropdown-toggle dropdown-link" data-toggle="dropdown">
+                                                                <span>Transportation</span>
+                                                                <i class="fa fa-angle-down"></i>
+                                                                <i class="sub-dropdown1 visible-sm visible-md visible-lg"></i>
+                                                                <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
+                                                            </a>
+                                                            <div class="megamenu-container megamenu-container-2 dropdown-menu" style={{width: '1170px'}}>
+                                                                <ul class="sub-mega-menu">
+                                                                    <li class="mega-links mega2-collumn1 col-sm-2">
+                                                                        <ul>
+                                                                            <li class="list-title">Book &amp; office supply</li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Science</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Economic</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Office Supply</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="mega-links mega2-collumn2 col-sm-2">
+                                                                        <ul>
+                                                                            <li class="list-title">Food Cupboard</li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Breakfast Cereals</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Jam, Honey &amp; Spreads</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Crisps, Snacks &amp; Nuts</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                        <ul>
+                                                                            <li class="list-title">Home &amp; garden</li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Kitchen</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Bed Room</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Garden</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    
+                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                        <ul>
+                                                                            <li class="list-title">Home &amp; garden</li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Kitchen</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Bed Room</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Garden</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="dropdown mega-menu">
+                                                            <a href="collections.html" class="dropdown-toggle dropdown-link" data-toggle="dropdown">
+                                                                <span>Clothing</span>
+                                                                <i class="fa fa-angle-down"></i>
+                                                                <i class="sub-dropdown1 visible-sm visible-md visible-lg"></i>
+                                                                <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
+                                                            </a>
+                                                            <div class="megamenu-container megamenu-container-2 dropdown-menu" style={{width: '1170px'}}>
+                                                                <ul class="sub-mega-menu">
+                                                                    <li class="mega-links mega2-collumn1 col-sm-2">
+                                                                        <ul>
+                                                                            <li class="list-title">Book &amp; office supply</li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Science</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Economic</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Office Supply</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="mega-links mega2-collumn2 col-sm-2">
+                                                                        <ul>
+                                                                            <li class="list-title">Food Cupboard</li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Breakfast Cereals</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Jam, Honey &amp; Spreads</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Crisps, Snacks &amp; Nuts</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                        <ul>
+                                                                            <li class="list-title">Home &amp; garden</li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Kitchen</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Bed Room</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Garden</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    
+                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                        <ul>
+                                                                            <li class="list-title">Home &amp; garden</li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Kitchen</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Bed Room</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Garden</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="dropdown mega-menu">
+                                                            <a href="collections.html" class="dropdown-toggle dropdown-link" data-toggle="dropdown">
+                                                                <span>Home Products</span>
+                                                                <i class="fa fa-angle-down"></i>
+                                                                <i class="sub-dropdown1 visible-sm visible-md visible-lg"></i>
+                                                                <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
+                                                            </a>
+                                                            <div class="megamenu-container megamenu-container-2 dropdown-menu" style={{width: '1170px'}}>
+                                                                <ul class="sub-mega-menu">
+                                                                    <li class="mega-links mega2-collumn1 col-sm-2">
+                                                                        <ul>
+                                                                            <li class="list-title">Book &amp; office supply</li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Science</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Economic</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Office Supply</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="mega-links mega2-collumn2 col-sm-2">
+                                                                        <ul>
+                                                                            <li class="list-title">Food Cupboard</li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Breakfast Cereals</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Jam, Honey &amp; Spreads</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Crisps, Snacks &amp; Nuts</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                        <ul>
+                                                                            <li class="list-title">Home &amp; garden</li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Kitchen</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Bed Room</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Garden</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    
+                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                        <ul>
+                                                                            <li class="list-title">Home &amp; garden</li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Kitchen</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Bed Room</a>
+                                                                            </li>
+                                                                            <li class="list-unstyled li-sub-mega">
+                                                                                <a href="collections.html">Garden</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                        
                                                     </ul>
                                                 </div>
                                                 <div class="navigation_icon">
