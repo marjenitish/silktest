@@ -5906,7 +5906,8 @@ body section.home_protab1_layout .protab1_top {
 
 body section.home_protab1_layout .protab1_top .page-title {
     border-width: 0;
-    width: 289px
+    width: 289px;
+    margin-bottom: 0;
 }
 
 body section.home_protab1_layout .protab1_top .page-title h2,body section.home_protab1_layout .protab1_top .page-title .h2 {

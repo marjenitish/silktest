@@ -1,7 +1,55 @@
 import React, {Component} from 'react';
 
 export default class BoxShowcase extends Component {
+
+
+    renderSlideshow = this.props.boxShowCaseSliders.map(function (now, index) {
+        console.log(index);
+        var status = "item image";
+        if(index == 0){
+            var status = "item image active";
+        }
+        return (
+            <div className={status}>
+            <img src={now.image} alt="" title="Image Slideshow" />
+            <div className="slideshow-caption position-right">
+                <div className="slide-caption">
+                    <div className="group-caption">
+                        <div className="content">
+                            <span className="title_1">
+                                {now.title1}
+                            </span>
+                            <span className="title_2">
+                                {now.title2}
+                            </span>
+                            <span className="caption">
+                                {now.caption}
+                            </span>
+                        </div>
+                        <div className="flex-action">
+                            <a className="btn" href="collections-all.html">{now.flex_action}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        );
+      }, this);
+
+      renderBoxShowCase = this.props.boxShowCase.map(function(now){
+          return(
+            <div className="banner-1">
+                <a href="collections-all.html">
+                    <img src={now.image} alt="" />
+                </a>
+            </div>  
+          );
+
+      }, this);
+
     render(){
+        console.log('props',this.props.cases);
         return (
             <div id="shopify-section-1490952756465" className="shopify-section index-section index-section-slideshow">
                 <div data-section-id="1490952756465" data-section-type="slideshow-section">
@@ -18,52 +66,8 @@ export default class BoxShowcase extends Component {
                                                         <li data-target="#home_main-slider" data-slide-to="1" className="carousel-2 active"></li>
                                                     </ol>
                                                     <div className="carousel-inner">
-                                                        <div className="item image active">
-                                                            <img src="assets/images/home1_slideshow_1.jpg" alt="" title="Image Slideshow" />
-                                                            <div className="slideshow-caption position-right">
-                                                                <div className="slide-caption">
-                                                                    <div className="group-caption">
-                                                                        <div className="content">
-                                                                            <span className="title_1">
-                                                                                Get computer to become a
-                                                                            </span>
-                                                                            <span className="title_2">
-                                                                                Pro gamer
-                                                                            </span>
-                                                                            <span className="caption">
-                                                                                Aliquam sed arcu a elit porttitor mattis eu id nibh. Vestibulum ultricies nulla sed dapibus vestibulum.
-                                                                            </span>
-                                                                        </div>
-                                                                        <div className="flex-action">
-                                                                            <a className="btn" href="collections-all.html">Shop Now</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="item image">
-                                                            <img src="assets/images/home1_slideshow_2.jpg" alt="" title="Image slideshow" />
-                                                            <div className="slideshow-caption position-middle">
-                                                                <div className="slide-caption">
-                                                                    <div className="group-caption">
-                                                                        <div className="content">
-                                                                            <span className="title_1">
-                                                                                Get computer to become a
-                                                                            </span>
-                                                                            <span className="title_2">
-                                                                                Pro gamer
-                                                                            </span>
-                                                                            <span className="caption">
-                                                                                Aliquam sed arcu a elit porttitor mattis eu id nibh. Vestibulum ultricies nulla sed dapibus vestibulum.
-                                                                            </span>
-                                                                        </div>
-                                                                        <div className="flex-action">
-                                                                            <a className="btn" href="collections-all.html">Shop Now</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                        
+                                                        {this.renderSlideshow}
                                                     </div>
                                                     <a className="left carousel-control" href="index.html#home_main-slider" data-slide="prev">
                                                         <span className="icon-prev"></span>
@@ -76,16 +80,7 @@ export default class BoxShowcase extends Component {
                                         </div>
                                         <div className="home-banner-inner col-sm-4">
                                             <div className="banner-content">
-                                                <div className="banner-1">
-                                                    <a href="collections-all.html">
-                                                        <img src="assets/images/home1_slideshow_banner_1.jpg" alt="" />
-                                                    </a>
-                                                </div>
-                                                <div className="banner-2">
-                                                    <a href="collections-all.html">
-                                                        <img src="assets/images/home1_slideshow_banner_2.jpg" alt="" />
-                                                    </a>
-                                                </div>
+                                                {this.renderBoxShowCase}
                                             </div>
                                         </div>
                                     </div>
