@@ -130,7 +130,7 @@ export default class TwoColumnProduct extends Component {
             category.map(function(category, index){
                 if(index >= 2){
                     return (
-                        <div className="column_product">
+                        <div className="column_product" key={index}>
                             <div className="product home_product">
                                 <div className="row-left">
                                     <a href="product.html" className="container_item">
@@ -150,6 +150,8 @@ export default class TwoColumnProduct extends Component {
                         </div>                                                                  
                     );
 
+                }else{
+                    return null;
                 }
             })
         ); 
@@ -158,8 +160,6 @@ export default class TwoColumnProduct extends Component {
         let leftcategory = this.state.leftCategory;
         let rightcategory = this.state.rightCategory;
         return (
-            <div id="shopify-section-1490953257213" className="shopify-section index-section index-section-procol">
-                <div data-section-id="1490953257213" data-section-type="procol-section">
                     <section className="home_procol_layout">
                         <div className="home_procol_wrapper">
                             <div className="container">
@@ -208,8 +208,6 @@ export default class TwoColumnProduct extends Component {
                             </div>
                         </div>
                     </section>
-                </div>
-            </div>
         );
     }
 }

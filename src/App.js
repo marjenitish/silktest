@@ -309,12 +309,12 @@ class App extends Component {
   }
 
   render() {
-      let boxShowCaseSliders = this.state.boxShowCaseSliders;
-      let boxShowCase = this.state.boxShowCase;
+      //let boxShowCaseSliders = this.state.boxShowCaseSliders;
+      //let boxShowCase = this.state.boxShowCase;
       let recommendations = this.state.recommendations;
-      let rightCategory = this.state.rightCategory;
-      let leftCategory = this.state.leftCategory;
-      let tabWithSlider = this.state.tabWithSlider;
+      //let rightCategory = this.state.rightCategory;
+      //let leftCategory = this.state.leftCategory;
+      //let tabWithSlider = this.state.tabWithSlider;
 
       let banner1 = this.state.banners[0];
       let banner2 = this.state.banners[1];
@@ -324,8 +324,8 @@ class App extends Component {
       return (
         <div className="App">
           <Header/>
-          <div class="page-container" id="PageContainer">
-            <main class="main-content" id="MainContent" role="main">
+          <div className="page-container" id="PageContainer">
+            <main className="main-content" id="MainContent" role="main">
               <BoxShowcase />
               <TwoColumnProduct />                     
               <BannerRow banner={banner1} />

@@ -42,7 +42,7 @@ export default class Header extends Component {
                                                         <a href="login.html">Login</a>
                                                     </span>
                                                     <div id="loginBox" className="dropdown-menu text-left" styles={{display: 'none'}}>
-                                                        <form method="post" action="./login.html" id="customer_login" accept-charset="UTF-8">
+                                                        <form method="post" action="./login.html" id="customer_login" acceptCharset="UTF-8">
                                                             <input type="hidden" value="customer_login" name="form_type" />
                                                             <input type="hidden" name="utf8" value="✓" />
                                                             <div id="bodyBox">
@@ -117,19 +117,19 @@ export default class Header extends Component {
                                                     </a>
                                                 </div>
 
-                                                <div class="group-search-cart">
-                                                    <div class="nav-search">
-                                                        <form class="search" action="./search.html">
+                                                <div className="group-search-cart">
+                                                    <div className="nav-search">
+                                                        <form className="search" action="./search.html">
                                                             <input type="hidden" name="type" value="product" />
-                                                            <input type="text" name="q" class="search_box" placeholder="Enter your keyword ..." value="" />
-                                                            <div class="collections-selector">
-                                                                <select class="single-option-selector" data-option="collection-option" id="collection-option" name="collection">
+                                                            <input type="text" name="q" className="search_box" placeholder="Enter your keyword ..." value="" />
+                                                            <div className="collections-selector">
+                                                                <select className="single-option-selector" data-option="collection-option" id="collection-option" name="collection">
                                                                     <option value="all">Products</option>
                                                                     <option value="best-sellers">Suppliers</option>
                                                                 </select>
                                                             </div>
-                                                            <button class="search_submit" type="submit">
-                                                                <svg aria-hidden="true" role="presentation" class="icon icon-search" viewBox="0 0 37 40">
+                                                            <button className="search_submit" type="submit">
+                                                                <svg aria-hidden="true" role="presentation" className="icon icon-search" viewBox="0 0 37 40">
                                                                     <path d="M35.6 36l-9.8-9.8c4.1-5.4 3.6-13.2-1.3-18.1-5.4-5.4-14.2-5.4-19.7 0-5.4 5.4-5.4 14.2 0 19.7 2.6 2.6 6.1 4.1 9.8 4.1 3 0 5.9-1 8.3-2.8l9.8 9.8c.4.4.9.6 1.4.6s1-.2 1.4-.6c.9-.9.9-2.1.1-2.9zm-20.9-8.2c-2.6 0-5.1-1-7-2.9-3.9-3.9-3.9-10.1 0-14C9.6 9 12.2 8 14.7 8s5.1 1 7 2.9c3.9 3.9 3.9 10.1 0 14-1.9 1.9-4.4 2.9-7 2.9z">
 
                                                                     </path>
@@ -137,76 +137,76 @@ export default class Header extends Component {
                                                             </button>
                                                         </form>
                                                     </div>
-                                                    <div class="nav-cart " id="cart-target">
-                                                        <div class="cart-info-group">
-                                                            <a href="cart.html" class="cart dropdown-toggle dropdown-link" data-toggle="dropdown">
-                                                                <i class="sub-dropdown1 visible-sm visible-md visible-lg"></i>
-                                                                <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
-                                                                <div class="num-items-in-cart">
-                                                                    <div class="items-cart-left">
-                                                                        <img class="cart_img" src="assets/images/bg-cart.png" alt="Image Cart" title="Image Cart" />
-                                                                        <span class="cart_text icon">
-                                                                            <span class="number">2</span>
+                                                    <div className="nav-cart " id="cart-target">
+                                                        <div className="cart-info-group">
+                                                            <a href="cart.html" className="cart dropdown-toggle dropdown-link" data-toggle="dropdown">
+                                                                <i className="sub-dropdown1 visible-sm visible-md visible-lg"></i>
+                                                                <i className="sub-dropdown visible-sm visible-md visible-lg"></i>
+                                                                <div className="num-items-in-cart">
+                                                                    <div className="items-cart-left">
+                                                                        <img className="cart_img" src="assets/images/bg-cart.png" alt="Cart" title="Image Cart" />
+                                                                        <span className="cart_text icon">
+                                                                            <span className="number">2</span>
                                                                         </span>
                                                                     </div>
-                                                                    <div class="items-cart-right">
-                                                                        <span class="title_cart">My Cart</span>
+                                                                    <div className="items-cart-right">
+                                                                        <span className="title_cart">My Cart</span>
                                                                     </div>
                                                                 </div>
                                                             </a>
-                                                            <div class="dropdown-menu cart-info" style={{display: 'none'}}>
-                                                                <div class="cart-content">
-                                                                    <div class="items control-container">
-                                                                        <div class="row">
-                                                                            <a class="cart-close" title="Remove" href="javascript:void(0);">
-                                                                                <i class="fa fa-times"></i>
+                                                            <div className="dropdown-menu cart-info" style={{display: 'none'}}>
+                                                                <div className="cart-content">
+                                                                    <div className="items control-container">
+                                                                        <div className="row">
+                                                                            <a className="cart-close" title="Remove" href="">
+                                                                                <i className="fa fa-times"></i>
                                                                             </a>
-                                                                            <div class="cart-left">
-                                                                                <a class="cart-image" href="product.html">
+                                                                            <div className="cart-left">
+                                                                                <a className="cart-image" href="product.html">
                                                                                     <img src="assets/images/electronic_01_compact.jpg" alt="" title="" />
                                                                                 </a>
                                                                             </div>
-                                                                            <div class="cart-right">
-                                                                                <div class="cart-title">
+                                                                            <div className="cart-right">
+                                                                                <div className="cart-title">
                                                                                     <a href="product.html">Electronic equipment - L / red</a>
                                                                                 </div>
-                                                                                <div class="cart-price">
-                                                                                    <span class="money" data-currency-usd="$200.00" data-currency="USD">$200.00</span>
-                                                                                    <span class="x"> x1</span>
+                                                                                <div className="cart-price">
+                                                                                    <span className="money" data-currency-usd="$200.00" data-currency="USD">$200.00</span>
+                                                                                    <span className="x"> x1</span>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="row">
-                                                                            <a class="cart-close" title="Remove" href="javascript:void(0);">
-                                                                                <i class="fa fa-times"></i>
+                                                                        <div className="row">
+                                                                            <a className="cart-close" title="Remove" href="">
+                                                                                <i className="fa fa-times"></i>
                                                                             </a>
-                                                                            <div class="cart-left">
-                                                                                <a class="cart-image" href="product.html">
+                                                                            <div className="cart-left">
+                                                                                <a className="cart-image" href="product.html">
                                                                                     <img src="assets/images/electronic_02_compact.jpg" alt="" title="" />
                                                                                 </a>
                                                                             </div>
-                                                                            <div class="cart-right">
-                                                                                <div class="cart-title">
+                                                                            <div className="cart-right">
+                                                                                <div className="cart-title">
                                                                                     <a href="product.html">Electronic equipment - L / red</a>
                                                                                 </div>
-                                                                                <div class="cart-price">
-                                                                                    <span class="money" data-currency-usd="$400.00" data-currency="USD">$400.00</span>
-                                                                                    <span class="x"> x1</span>
+                                                                                <div className="cart-price">
+                                                                                    <span className="money" data-currency-usd="$400.00" data-currency="USD">$400.00</span>
+                                                                                    <span className="x"> x1</span>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="subtotal">
+                                                                    <div className="subtotal">
                                                                         <span>Subtotal:</span>
-                                                                        <span class="cart-total-right money" data-currency-usd="$600.00"
+                                                                        <span className="cart-total-right money" data-currency-usd="$600.00"
                                                                             data-currency="USD">$600.00</span>
                                                                     </div>
-                                                                    <div class="action">
-                                                                        <button class="btn" onclick="window.location='./cart.html'">View Cart
-                                                                            <i class="fa fa-caret-right"></i>
+                                                                    <div className="action">
+                                                                        <button className="btn">View Cart
+                                                                            <i className="fa fa-caret-right"></i>
                                                                         </button>
-                                                                        <button class="btn float-right" onclick="window.location='./cart.html'">CHECKOUT
-                                                                            <i class="fa fa-caret-right"></i>
+                                                                        <button className="btn float-right">CHECKOUT
+                                                                            <i className="fa fa-caret-right"></i>
                                                                         </button>
                                                                     </div>
                                                                 </div>
@@ -223,37 +223,37 @@ export default class Header extends Component {
                             </div>
                         </section>
 
-                        <section class="navigation-header">
-                            <div class="navigation-header-wrapper">
-                                <div class="container clearfix">
-                                    <div class="row">
-                                        <div class="main-navigation-inner">
-                                            <div class="navigation_area">
-                                                <div class="navigation_left">
-                                                    <div class="group_navbtn">
-                                                        <a href="collections.html" class="dropdown-toggle" data-toggle="dropdown">
-                                                            <span class="dropdown-toggle">
+                        <section className="navigation-header">
+                            <div className="navigation-header-wrapper">
+                                <div className="container clearfix">
+                                    <div className="row">
+                                        <div className="main-navigation-inner">
+                                            <div className="navigation_area">
+                                                <div className="navigation_left">
+                                                    <div className="group_navbtn">
+                                                        <a href="collections.html" className="dropdown-toggle" data-toggle="dropdown">
+                                                            <span className="dropdown-toggle">
                                                                 My Market
                                                             </span>
-                                                            <i class="fa fa-bars" aria-hidden="true"></i>
+                                                            <i className="fa fa-bars" aria-hidden="true"></i>
                                                         </a>
-                                                        <ul class="navigation_links_left dropdown-menu" styles={{display: 'none'}}>                                                            
-                                                            <li class="nav-item _icon">
+                                                        <ul className="navigation_links_left dropdown-menu" styles={{display: 'none'}}>                                                            
+                                                            <li className="nav-item _icon">
                                                                 <a href="collections.html">
                                                                     <span>Digital</span>
                                                                 </a>
                                                             </li>
-                                                            <li class="nav-item _icon">
+                                                            <li className="nav-item _icon">
                                                                 <a href="collections.html">
                                                                     <span>Furniture</span>
                                                                 </a>
                                                             </li>
-                                                            <li class="nav-item _icon">
+                                                            <li className="nav-item _icon">
                                                                 <a href="collections.html">
                                                                     <span>Mobile Phone</span>
                                                                 </a>
                                                             </li>
-                                                            <li class="nav-item _icon">
+                                                            <li className="nav-item _icon">
                                                                 <a href="collections.html">
                                                                     <span>Other Services</span>
                                                                 </a>
@@ -261,73 +261,73 @@ export default class Header extends Component {
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="navigation_right">
-                                                    <ul class="navigation_links">
+                                                <div className="navigation_right">
+                                                    <ul className="navigation_links">
 
 
 
-                                                        <li class="dropdown mega-menu">
-                                                            <a href="collections.html" class="dropdown-toggle dropdown-link" data-toggle="dropdown">
+                                                        <li className="dropdown mega-menu">
+                                                            <a href="collections.html" className="dropdown-toggle dropdown-link" data-toggle="dropdown">
                                                                 <span>Machinery</span>
-                                                                <i class="fa fa-angle-down"></i>
-                                                                <i class="sub-dropdown1 visible-sm visible-md visible-lg"></i>
-                                                                <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
+                                                                <i className="fa fa-angle-down"></i>
+                                                                <i className="sub-dropdown1 visible-sm visible-md visible-lg"></i>
+                                                                <i className="sub-dropdown visible-sm visible-md visible-lg"></i>
                                                             </a>
-                                                            <div class="megamenu-container megamenu-container-2 dropdown-menu" style={{width: '1170px'}}>
-                                                                <ul class="sub-mega-menu">
-                                                                    <li class="mega-links mega2-collumn1 col-sm-2">
+                                                            <div className="megamenu-container megamenu-container-2 dropdown-menu" style={{width: '1170px'}}>
+                                                                <ul className="sub-mega-menu">
+                                                                    <li className="mega-links mega2-collumn1 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Book &amp; office supply</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Book &amp; office supply</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Science</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Economic</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Office Supply</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li class="mega-links mega2-collumn2 col-sm-2">
+                                                                    <li className="mega-links mega2-collumn2 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Food Cupboard</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Food Cupboard</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Breakfast Cereals</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Jam, Honey &amp; Spreads</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Crisps, Snacks &amp; Nuts</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                    <li className="mega-links mega2-collumn3 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Home &amp; garden</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Home &amp; garden</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Kitchen</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Bed Room</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Garden</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>
                                                                     
-                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                    <li className="mega-links mega2-collumn3 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Home &amp; garden</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Home &amp; garden</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Kitchen</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Bed Room</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Garden</a>
                                                                             </li>
                                                                         </ul>
@@ -336,68 +336,68 @@ export default class Header extends Component {
                                                             </div>
                                                         </li>
 
-                                                        <li class="dropdown mega-menu">
-                                                            <a href="collections.html" class="dropdown-toggle dropdown-link" data-toggle="dropdown">
+                                                        <li className="dropdown mega-menu">
+                                                            <a href="collections.html" className="dropdown-toggle dropdown-link" data-toggle="dropdown">
                                                                 <span>Electronics</span>
-                                                                <i class="fa fa-angle-down"></i>
-                                                                <i class="sub-dropdown1 visible-sm visible-md visible-lg"></i>
-                                                                <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
+                                                                <i className="fa fa-angle-down"></i>
+                                                                <i className="sub-dropdown1 visible-sm visible-md visible-lg"></i>
+                                                                <i className="sub-dropdown visible-sm visible-md visible-lg"></i>
                                                             </a>
-                                                            <div class="megamenu-container megamenu-container-2 dropdown-menu" style={{width: '1170px'}}>
-                                                                <ul class="sub-mega-menu">
-                                                                    <li class="mega-links mega2-collumn1 col-sm-2">
+                                                            <div className="megamenu-container megamenu-container-2 dropdown-menu" style={{width: '1170px'}}>
+                                                                <ul className="sub-mega-menu">
+                                                                    <li className="mega-links mega2-collumn1 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Book &amp; office supply</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Book &amp; office supply</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Science</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Economic</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Office Supply</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li class="mega-links mega2-collumn2 col-sm-2">
+                                                                    <li className="mega-links mega2-collumn2 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Food Cupboard</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Food Cupboard</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Breakfast Cereals</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Jam, Honey &amp; Spreads</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Crisps, Snacks &amp; Nuts</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                    <li className="mega-links mega2-collumn3 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Home &amp; garden</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Home &amp; garden</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Kitchen</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Bed Room</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Garden</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>
                                                                     
-                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                    <li className="mega-links mega2-collumn3 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Home &amp; garden</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Home &amp; garden</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Kitchen</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Bed Room</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Garden</a>
                                                                             </li>
                                                                         </ul>
@@ -407,68 +407,68 @@ export default class Header extends Component {
                                                         </li>
 
 
-                                                        <li class="dropdown mega-menu">
-                                                            <a href="collections.html" class="dropdown-toggle dropdown-link" data-toggle="dropdown">
+                                                        <li className="dropdown mega-menu">
+                                                            <a href="collections.html" className="dropdown-toggle dropdown-link" data-toggle="dropdown">
                                                                 <span>Transportation</span>
-                                                                <i class="fa fa-angle-down"></i>
-                                                                <i class="sub-dropdown1 visible-sm visible-md visible-lg"></i>
-                                                                <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
+                                                                <i className="fa fa-angle-down"></i>
+                                                                <i className="sub-dropdown1 visible-sm visible-md visible-lg"></i>
+                                                                <i className="sub-dropdown visible-sm visible-md visible-lg"></i>
                                                             </a>
-                                                            <div class="megamenu-container megamenu-container-2 dropdown-menu" style={{width: '1170px'}}>
-                                                                <ul class="sub-mega-menu">
-                                                                    <li class="mega-links mega2-collumn1 col-sm-2">
+                                                            <div className="megamenu-container megamenu-container-2 dropdown-menu" style={{width: '1170px'}}>
+                                                                <ul className="sub-mega-menu">
+                                                                    <li className="mega-links mega2-collumn1 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Book &amp; office supply</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Book &amp; office supply</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Science</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Economic</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Office Supply</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li class="mega-links mega2-collumn2 col-sm-2">
+                                                                    <li className="mega-links mega2-collumn2 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Food Cupboard</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Food Cupboard</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Breakfast Cereals</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Jam, Honey &amp; Spreads</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Crisps, Snacks &amp; Nuts</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                    <li className="mega-links mega2-collumn3 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Home &amp; garden</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Home &amp; garden</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Kitchen</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Bed Room</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Garden</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>
                                                                     
-                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                    <li className="mega-links mega2-collumn3 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Home &amp; garden</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Home &amp; garden</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Kitchen</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Bed Room</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Garden</a>
                                                                             </li>
                                                                         </ul>
@@ -477,68 +477,68 @@ export default class Header extends Component {
                                                             </div>
                                                         </li>
 
-                                                        <li class="dropdown mega-menu">
-                                                            <a href="collections.html" class="dropdown-toggle dropdown-link" data-toggle="dropdown">
+                                                        <li className="dropdown mega-menu">
+                                                            <a href="collections.html" className="dropdown-toggle dropdown-link" data-toggle="dropdown">
                                                                 <span>Clothing</span>
-                                                                <i class="fa fa-angle-down"></i>
-                                                                <i class="sub-dropdown1 visible-sm visible-md visible-lg"></i>
-                                                                <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
+                                                                <i className="fa fa-angle-down"></i>
+                                                                <i className="sub-dropdown1 visible-sm visible-md visible-lg"></i>
+                                                                <i className="sub-dropdown visible-sm visible-md visible-lg"></i>
                                                             </a>
-                                                            <div class="megamenu-container megamenu-container-2 dropdown-menu" style={{width: '1170px'}}>
-                                                                <ul class="sub-mega-menu">
-                                                                    <li class="mega-links mega2-collumn1 col-sm-2">
+                                                            <div className="megamenu-container megamenu-container-2 dropdown-menu" style={{width: '1170px'}}>
+                                                                <ul className="sub-mega-menu">
+                                                                    <li className="mega-links mega2-collumn1 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Book &amp; office supply</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Book &amp; office supply</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Science</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Economic</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Office Supply</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li class="mega-links mega2-collumn2 col-sm-2">
+                                                                    <li className="mega-links mega2-collumn2 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Food Cupboard</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Food Cupboard</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Breakfast Cereals</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Jam, Honey &amp; Spreads</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Crisps, Snacks &amp; Nuts</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                    <li className="mega-links mega2-collumn3 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Home &amp; garden</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Home &amp; garden</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Kitchen</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Bed Room</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Garden</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>
                                                                     
-                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                    <li className="mega-links mega2-collumn3 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Home &amp; garden</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Home &amp; garden</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Kitchen</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Bed Room</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Garden</a>
                                                                             </li>
                                                                         </ul>
@@ -547,68 +547,68 @@ export default class Header extends Component {
                                                             </div>
                                                         </li>
 
-                                                        <li class="dropdown mega-menu">
-                                                            <a href="collections.html" class="dropdown-toggle dropdown-link" data-toggle="dropdown">
+                                                        <li className="dropdown mega-menu">
+                                                            <a href="collections.html" className="dropdown-toggle dropdown-link" data-toggle="dropdown">
                                                                 <span>Home Products</span>
-                                                                <i class="fa fa-angle-down"></i>
-                                                                <i class="sub-dropdown1 visible-sm visible-md visible-lg"></i>
-                                                                <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
+                                                                <i className="fa fa-angle-down"></i>
+                                                                <i className="sub-dropdown1 visible-sm visible-md visible-lg"></i>
+                                                                <i className="sub-dropdown visible-sm visible-md visible-lg"></i>
                                                             </a>
-                                                            <div class="megamenu-container megamenu-container-2 dropdown-menu" style={{width: '1170px'}}>
-                                                                <ul class="sub-mega-menu">
-                                                                    <li class="mega-links mega2-collumn1 col-sm-2">
+                                                            <div className="megamenu-container megamenu-container-2 dropdown-menu" style={{width: '1170px'}}>
+                                                                <ul className="sub-mega-menu">
+                                                                    <li className="mega-links mega2-collumn1 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Book &amp; office supply</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Book &amp; office supply</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Science</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Economic</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Office Supply</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li class="mega-links mega2-collumn2 col-sm-2">
+                                                                    <li className="mega-links mega2-collumn2 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Food Cupboard</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Food Cupboard</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Breakfast Cereals</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Jam, Honey &amp; Spreads</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Crisps, Snacks &amp; Nuts</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                    <li className="mega-links mega2-collumn3 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Home &amp; garden</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Home &amp; garden</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Kitchen</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Bed Room</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Garden</a>
                                                                             </li>
                                                                         </ul>
                                                                     </li>
                                                                     
-                                                                    <li class="mega-links mega2-collumn3 col-sm-2">
+                                                                    <li className="mega-links mega2-collumn3 col-sm-2">
                                                                         <ul>
-                                                                            <li class="list-title">Home &amp; garden</li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-title">Home &amp; garden</li>
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Kitchen</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Bed Room</a>
                                                                             </li>
-                                                                            <li class="list-unstyled li-sub-mega">
+                                                                            <li className="list-unstyled li-sub-mega">
                                                                                 <a href="collections.html">Garden</a>
                                                                             </li>
                                                                         </ul>
@@ -619,75 +619,75 @@ export default class Header extends Component {
                                         
                                                     </ul>
                                                 </div>
-                                                <div class="navigation_icon">
-                                                    <div class="navigation_icon_group">
-                                                        <div class="icon_cart">
-                                                            <div class="cart-info-group">
-                                                                <a href="cart.html" class="cart dropdown-toggle dropdown-link" data-toggle="dropdown">
-                                                                    <i class="sub-dropdown1 visible-sm visible-md visible-lg"></i>
-                                                                    <i class="sub-dropdown visible-sm visible-md visible-lg"></i>
-                                                                    <div class="num-items-in-cart">
-                                                                        <div class="items-cart-left">
-                                                                            <img class="cart_img" src="assets/images/bg-cart.png" alt="Image Cart" title="Image Cart" />
-                                                                            <span class="cart_text icon">
-                                                                                <span class="number">2</span>
+                                                <div className="navigation_icon">
+                                                    <div className="navigation_icon_group">
+                                                        <div className="icon_cart">
+                                                            <div className="cart-info-group">
+                                                                <a href="cart.html" className="cart dropdown-toggle dropdown-link" data-toggle="dropdown">
+                                                                    <i className="sub-dropdown1 visible-sm visible-md visible-lg"></i>
+                                                                    <i className="sub-dropdown visible-sm visible-md visible-lg"></i>
+                                                                    <div className="num-items-in-cart">
+                                                                        <div className="items-cart-left">
+                                                                            <img className="cart_img" src="assets/images/bg-cart.png" alt="Cart" title="Image Cart" />
+                                                                            <span className="cart_text icon">
+                                                                                <span className="number">2</span>
                                                                             </span>
                                                                         </div>
                                                                     </div>
                                                                 </a>
-                                                                <div class="dropdown-menu cart-info">
-                                                                    <div class="cart-content">
-                                                                        <div class="items control-container">
-                                                                            <div class="row">
-                                                                                <a class="cart-close" title="Remove" href="javascript:void(0);">
-                                                                                    <i class="fa fa-times"></i>
+                                                                <div className="dropdown-menu cart-info">
+                                                                    <div className="cart-content">
+                                                                        <div className="items control-container">
+                                                                            <div className="row">
+                                                                                <a className="cart-close" title="Remove" href="">
+                                                                                    <i className="fa fa-times"></i>
                                                                                 </a>
-                                                                                <div class="cart-left">
-                                                                                    <a class="cart-image" href="product.html">
+                                                                                <div className="cart-left">
+                                                                                    <a className="cart-image" href="product.html">
                                                                                         <img src="assets/images/electronic_01_compact.jpg" alt="" title="" />
                                                                                     </a>
                                                                                 </div>
-                                                                                <div class="cart-right">
-                                                                                    <div class="cart-title">
+                                                                                <div className="cart-right">
+                                                                                    <div className="cart-title">
                                                                                         <a href="product.html">Electronic equipment - L / red</a>
                                                                                     </div>
-                                                                                    <div class="cart-price">
-                                                                                        <span class="money" data-currency-usd="$200.00" data-currency="USD">$200.00</span>
-                                                                                        <span class="x"> x1</span>
+                                                                                    <div className="cart-price">
+                                                                                        <span className="money" data-currency-usd="$200.00" data-currency="USD">$200.00</span>
+                                                                                        <span className="x"> x1</span>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="row">
-                                                                                <a class="cart-close" title="Remove" href="javascript:void(0);">
-                                                                                    <i class="fa fa-times"></i>
+                                                                            <div className="row">
+                                                                                <a className="cart-close" title="Remove" href="">
+                                                                                    <i className="fa fa-times"></i>
                                                                                 </a>
-                                                                                <div class="cart-left">
-                                                                                    <a class="cart-image" href="product.html">
+                                                                                <div className="cart-left">
+                                                                                    <a className="cart-image" href="product.html">
                                                                                         <img src="assets/images/electronic_02_compact.jpg" alt="" title="" />
                                                                                     </a>
                                                                                 </div>
-                                                                                <div class="cart-right">
-                                                                                    <div class="cart-title">
+                                                                                <div className="cart-right">
+                                                                                    <div className="cart-title">
                                                                                         <a href="product.html">Electronic equipment - L / red</a>
                                                                                     </div>
-                                                                                    <div class="cart-price">
-                                                                                        <span class="money" data-currency-usd="$400.00" data-currency="USD">$400.00</span>
-                                                                                        <span class="x"> x1</span>
+                                                                                    <div className="cart-price">
+                                                                                        <span className="money" data-currency-usd="$400.00" data-currency="USD">$400.00</span>
+                                                                                        <span className="x"> x1</span>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="subtotal">
+                                                                        <div className="subtotal">
                                                                             <span>Subtotal:</span>
-                                                                            <span class="cart-total-right money" data-currency-usd="$600.00"
+                                                                            <span className="cart-total-right money" data-currency-usd="$600.00"
                                                                                 data-currency="USD">$600.00</span>
                                                                         </div>
-                                                                        <div class="action">
-                                                                            <button class="btn" onclick="window.location='./cart.html'">View Cart
-                                                                                <i class="fa fa-caret-right"></i>
+                                                                        <div className="action">
+                                                                            <button className="btn">View Cart
+                                                                                <i className="fa fa-caret-right"></i>
                                                                             </button>
-                                                                            <button class="btn float-right" onclick="window.location='./cart.html'">CHECKOUT
-                                                                                <i class="fa fa-caret-right"></i>
+                                                                            <button className="btn float-right">CHECKOUT
+                                                                                <i className="fa fa-caret-right"></i>
                                                                             </button>
                                                                         </div>
                                                                     </div>

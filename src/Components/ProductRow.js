@@ -4,7 +4,7 @@ export default class ProductRow extends Component {
 
     recommendations = this.props.recommendations.map(function (now, index) {        
         return (
-            <div className="content_product col-sm-2">
+            <div className="content_product col-sm-2" key={index}>
                 <div className="row-container product list-unstyled clearfix">
                     <div className="row-left">
                         <a href="product.html" className="hoverBorder container_item">
@@ -67,9 +67,7 @@ export default class ProductRow extends Component {
 
     render(){
         return (
-            <div id="shopify-section-1490952827558" className="shopify-section index-section index-section-prosli">
-                <div data-section-id="1490952827558" data-section-type="prosli-section">
-                    <section className="home_prosli_layout">
+            <section className="home_prosli_layout">
                         <div className="home_prosli_wrapper">
                             <div className="container">
                                 <div className="row">
@@ -88,9 +86,7 @@ export default class ProductRow extends Component {
                                 </div>
                             </div>
                         </div>
-                    </section>
-                </div>
-            </div>
+            </section>
             
         );
     }

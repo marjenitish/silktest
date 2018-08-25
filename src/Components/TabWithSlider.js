@@ -180,18 +180,18 @@ export default class TabWithSlider extends Component {
     renderTabs = (tabWithSlider) => tabWithSlider.tabs.map(function(tab, index){
         var tabClass = "";
         if(index === 0){
-            var tabClass = "active";
+            tabClass = "active";
         }
         return (
-            <li className={tabClass}>
+            <li className={tabClass} key={index}>
                 <a href="index.html#home_protab1_tab_1" data-toggle="tab">{tab.title}</a>
             </li>                                        
         );
     });
 
-    renderTabsPaneInside = (tab) => tab.products.map(function(tabPane){
+    renderTabsPaneInside = (tab) => tab.products.map(function(tabPane, index){
         return(
-                <div className="content_product">
+                <div className="content_product" key={index}>
                     <div className="row-container product list-unstyled clearfix">
                         <div className="row-left">
                             <a href="product.html" className="hoverBorder container_item">
@@ -257,10 +257,10 @@ export default class TabWithSlider extends Component {
     renderTabsPane = (tabWithSlider) => tabWithSlider.tabs.map(function(tab,index){
         var tabClass = "tab-pane";
         if(index === 0){
-            var tabClass = "tab-pane active";
+            tabClass = "tab-pane active";
         }
         return (
-            <div className={tabClass} id="home_protab1_tab_1">
+            <div className={tabClass} key={index} id="home_protab1_tab_1">
                 <div className="protab1_item">
                     {this.renderTabsPaneInside(tab)}      
                 </div>
@@ -272,9 +272,7 @@ export default class TabWithSlider extends Component {
         let tabWithSlider = this.state.tabWithSlider;
 
         return (
-            <div className="shopify-section index-section index-section-protab1">
-                <div data-section-id="1490953841934" data-section-type="protab1-section">
-                    <section className="home_protab1_layout">
+            <section className="home_protab1_layout">
                         <div className="home_protab1_wrapper">
                             <div className="container">
                                 <div className="row">
@@ -304,9 +302,7 @@ export default class TabWithSlider extends Component {
                                 </div>
                             </div>
                         </div>
-                    </section>
-                </div>
-            </div>
+                </section>
             
             
         );

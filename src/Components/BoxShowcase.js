@@ -35,11 +35,11 @@ export default class BoxShowcase extends Component {
     renderSlideshow = (boxShowCaseSliders) => boxShowCaseSliders.map(function (now, index) {
         console.log(index);
         var status = "item image";
-        if(index == 0){
-            var status = "item image active";
+        if(index === 0){
+            status = "item image active";
         }
         return (
-            <div className={status}>
+            <div className={status} key={index}>
             <img src={now.image} alt="" title="Image Slideshow" />
             <div className="slideshow-caption position-right">
                 <div className="slide-caption">
@@ -66,9 +66,9 @@ export default class BoxShowcase extends Component {
         );
     }, this);
 
-    renderBoxShowCase = (boxShowCase) => boxShowCase.map(function(now){
+    renderBoxShowCase = (boxShowCase) => boxShowCase.map(function(now, index){
         return(
-            <div className="banner-1">
+            <div className="banner-1" key={index}>
                 <a href="collections-all.html">
                     <img src={now.image} alt="" />
                 </a>
@@ -82,9 +82,7 @@ export default class BoxShowcase extends Component {
         let boxShowCase = this.state.boxShowCase;
 
         return (
-            <div id="shopify-section-1490952756465" className="shopify-section index-section index-section-slideshow">
-                <div data-section-id="1490952756465" data-section-type="slideshow-section">
-                    <section className="home_slideshow main-slideshow">
+            <section className="home_slideshow main-slideshow">
                         <div className="home-slideshow-wrapper">
                             <div className="container">
                                 <div className="row">
@@ -118,9 +116,7 @@ export default class BoxShowcase extends Component {
                                 </div>
                             </div>
                         </div>
-                    </section>
-                </div>
-            </div>
+            </section>
         );
     }
 }

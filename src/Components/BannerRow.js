@@ -3,8 +3,6 @@ import React, {Component} from 'react';
 export default class BannerRow extends Component {
     render(){
         return (
-            <div className="shopify-section index-section index-section-banner">
-                <div data-section-id="1491192677181" data-section-type="banner-section">
                     <section className="home_banner_layout">
                         <div className="home_banner_wrapper">
                             <div className="container">
@@ -22,8 +20,6 @@ export default class BannerRow extends Component {
                             </div>
                         </div>
                     </section>
-                </div>
-            </div>
             
         );
     }
