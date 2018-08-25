@@ -7,6 +7,8 @@ import BannerRow from './Components/BannerRow';
 import TwoColumnProduct from './Components/TwoColumnProduct';
 import TabWithSlider from './Components/TabWithSlider';
 
+import {Row, Col} from 'antd';
+
 class App extends Component {
   
   constructor(props){
@@ -323,20 +325,30 @@ class App extends Component {
 
       return (
         <div className="App">
-          <Header/>
-          <div className="page-container" id="PageContainer">
-            <main className="main-content" id="MainContent" role="main">
-              <BoxShowcase />
-              <TwoColumnProduct />                     
-              <BannerRow banner={banner1} />
-              <TabWithSlider /> 
-              <BannerRow banner={banner2} />
-              <ProductRow recommendations= {recommendations} />
-              <BannerRow banner={banner3} />
-            </main>
-          </div>
-          <Footer/>
+            <Row>              
+              <Header />
+            </Row>
+
+            <Row><BoxShowcase /></Row>
+            <Row style={{marginTop: '20px'}}><ProductRow categoryName="Consumer Electronics" recommendations= {recommendations} /></Row>            
+
+            <Row style={{marginTop: '20px'}}><ProductRow categoryName="Home and Garden" recommendations= {recommendations} /></Row>            
+
+            <Row style={{marginTop: '20px'}}><ProductRow categoryName="Automobiles and Motorcycles" recommendations= {recommendations} /></Row>
+            <BannerRow banner={banner3} />
+
         </div>
+        // <div className="App">
+        //   <Header/>
+        //   <div className="page-container" id="PageContainer">
+        //     <main className="main-content" id="MainContent" role="main">
+        //       <BoxShowcase />
+        //       <ProductRow recommendations= {recommendations} />
+        //       <BannerRow banner={banner3} />
+        //     </main>
+        //   </div>
+        //   <Footer/>
+        // </div>
       );
     }
   }
